@@ -1,0 +1,163 @@
+﻿
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <style>
+        .table td, .table th {
+            padding: 0.15rem;
+            vertical-align: top;
+            border: 1.5px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table class="table table-bordered table-striped">
+            <tr class="text-center bg-danger text-white font-weight-bold">
+                <td colspan="2"> Early Claim Information - Urgent Attention Required</td>
+            </tr>
+            <tr style="height:2px;">
+                <td width="20px" style="font-weight:bold">Policy Number</td>
+                <td width="20px" style="font-weight:bold" id="Er_policy_number">[Er_policy_number]</td>
+            </tr>
+            <tr class="text-center bg-danger text-white font-weight-bold">
+                <td colspan="2">Sales Information</td>
+            </tr>
+            <tr>
+                <td>Channel</td>
+                <td id="Er_channel">[Er_channel]</td>
+            </tr>
+            <tr>
+                <td>Partner Name</td>
+                <td id="Er_partner_name">[Er_partner_name]</td>
+            </tr>
+            <tr>
+                <td>Zone</td>
+                <td id="Er_zone">[Er_zone]</td>
+            </tr>
+            <tr>
+                <td>Region</td>
+                <td id="Er_region">[Er_region]</td>
+            </tr>
+            <tr>
+                <td>Regional Head</td>
+                <td id="Er_regional_head">[Er_regional_head]</td>
+            </tr>
+
+            <tr>
+                <td>Unit Id</td>
+                <td id="Er_branch_manager_name">[Unit_Id]</td>
+            </tr>
+            <tr>
+                <td>Sourcing Manager</td>
+                <td id="Er_sourcing_manager">[Er_sourcing_manager]</td>
+            </tr>
+            <tr>
+                <td>Sourcing Manager Status ( Active / Inactive)</td>
+                <td id="Er_sourcing_manager_status">[Er_sourcing_manager_status]</td>
+            </tr>
+            <tr>
+                <td>Sourcing Agent ( name of the seller in case of Direct / Name of the Relationship Manager In case of Banca)</td>
+                <td id="Er_sourcing_agent">[Er_sourcing_agent]</td>
+            </tr>
+            <tr>
+                <td>Total Cases sourced by the Sourcing Agent ( - ditto-)</td>
+                <td id="Er_total_cases">[Er_total_cases]</td>
+            </tr>
+            <tr>
+                <td>Any other claims received from Same sourcing Agent ( Y/N)</td>
+                <td id="Er_other_claim">[Er_other_claim]</td>
+            </tr>
+            <tr class="text-center bg-danger text-white font-weight-bold">
+                <td colspan="2"> Policy details</td>
+            </tr>
+            <tr>
+                <td>Insured Name</td>
+                <td id="Er_insured_name">[Er_insured_name]</td>
+            </tr>
+            <tr>
+                <td>Risk Commencement Date</td>
+                <td id="Er_risk_commencement_date">[Er_risk_commencement_date]</td>
+            </tr>
+            <tr>
+                <td>APE</td>
+                <td id="Er_ape">[Er_ape]</td>
+            </tr>
+            <tr>
+                <td>Sum Assured</td>
+                <td id="Er_sum_assured">[Er_sum_assured]</td>
+            </tr>
+            <tr>
+                <td>Product Type ( ULIP / Traditional / Term)</td>
+                <td id="Er_product_type">[Er_product_type]</td>
+            </tr>
+            <tr>
+                <td>Product Name</td>
+                <td id="Er_product_name">[Er_product_name]</td>
+            </tr>
+            <tr>
+                <td>Mode ( Monthly / Quarterly / Half Yearly / Single)</td>
+                <td id="Er_mode">[Er_mode]</td>
+            </tr>
+            <tr>
+                <td>Age of the life assured</td>
+                <td id="Er_age_of_life_assured">[Er_age_of_life_assured]</td>
+            </tr>
+            <tr>
+                <td>Life Assured Profession</td>
+                <td id="Er_life_assured_profession">[Er_life_assured_profession]</td>
+            </tr>
+            <tr>
+                <td>Customer Location ( as per the address given)</td>
+                <td id="Er_cusomer_location">[Er_cusomer_location]</td>
+            </tr>
+            <tr class="text-center bg-danger text-white font-weight-bold">
+                <td colspan="2"> Claims Information</td>
+            </tr>
+            <tr>
+                <td>Date of Intimation</td>
+                <td id="Er_date_of_intimation">[Er_date_of_intimation]</td>
+            </tr>
+            <tr>
+                <td>Date of Loss</td>
+                <td id="Er_date_of_loss">[Er_date_of_loss]</td>
+            </tr>
+            <tr>
+                <td>No of days elapsed from RCD to Death</td>
+                <td id="Er_no_of_days">[Er_no_of_days]</td>
+            </tr>
+            <tr>
+                <td>Death Sum Assured</td>
+                <td id="Er_death_sum_assured">[Er_death_sum_assured]</td>
+            </tr>
+            <tr>
+                <td>Cause of death reported</td>
+                <td id="Er_causes_of_death">[Er_causes_of_death]</td>
+            </tr>
+            <tr class="text-center bg-danger text-white font-weight-bold">
+                <td colspan="2"> Pre-Issuance Risk verification</td>
+            </tr>
+            <tr>
+                <td>MHR provided by BM/SM</td>
+                <td id="Er_mhr_provided_by_bm">[Er_mhr_provided_by_bm]</td>
+            </tr>
+            <tr>
+                <td>Death Before Proposal ( Y / N)</td>
+                <td id="Er_death_before_proposal">[Er_death_before_proposal]</td>
+            </tr>
+            <tr>
+                <td>Medical / Non Medical</td>
+                <td id="Er_medical_nonmedical">[Er_medical_nonmedical]</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
